@@ -1,0 +1,514 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Make your voice heard</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="MAKE YOUR VOICE HEARD. SAY NO TO THE STATE EDUCATION DEPARTMENT'S PLAN TO TRANSFORM OUR YESHIVAS">
+<meta name="keywords" content="">
+<meta name="author" content="yaffed" />
+<meta property="og:url" content="https://yaffed.org/regulations" />
+<meta property="og:title" content="yaffed" />
+<meta property="og:site_name" content="yaffed" />
+<meta property="og:description" content="yaffed" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="style.scss" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var SITE_URL='https://voice.pearlsny.org/';
+</script>
+
+</head>
+<body>
+    <header role="banner">
+    <a href="https://yaffed.org/">
+                    <img src="logo.png" alt="Raise Your Voice" />
+    </a>
+</header>	
+
+<main role="article">
+    <article class="banner">
+        <section class="banner-box1">
+            <h1 role="main">EQUAL EDUCATION FOR ALL
+            <span >IT'S THE LAW. ASK THE NYS EDUCATION DEPT. TO DO THEIR JOBS AND ENFORCE IT.</span>
+            </h1>
+        </section>
+
+
+
+        <section class="banner-box2" role="group">
+            <p class="explain">This is placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Praesent elementum facilisis leo vel fringilla est. Ultricies integer quis auctor elit sed. Dictum at tempor commodo ullamcorper a lacus. Vitae elementum curabitur vitae nunc. Nisl vel pretium lectus quam id leo in vitae. Est ultricies integer quis auctor elit. Ut eu sem integer vitae justo eget magna. Ultricies leo integer malesuada nunc vel. Ac feugiat sed lectus vestibulum. Id faucibus nisl tincidunt eget nullam non. Interdum consectetur libero id faucibus. Vivamus at augue eget arcu dictum varius. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sapien pellentesque habitant morbi tristique.</p>
+        </section>
+    </article>
+
+    <section class="graphics"> 
+    
+        <p class="graphics">That at least 50,000 Hasidic children in New York receive little secular education and many receive no secular education at all?</p>
+        <img src="/assets/boy-chart.svg">
+
+        <p class="graphics"> That only about 5% of Hasidic boys receive an accredited high school diploma and lack the basic skills for work?</p>
+        <img src="/assets/diploma.svg">
+
+        <p class="graphics"><p class="graphics">That a disproportionately high percentage of Hasidic yeshiva graduates rely on some form of government assistance?</p>
+        <img  src="/assets/pie-chart.svg">
+
+        <p class="graphics">That many Hasidic Yeshivas that don’t provide a basic secular education receive millions of your tax dollars from government programs? </p>
+        <img src="/assets/money.svg">
+
+    </section> 
+
+    <section role="form">
+
+        <h3 id="form" class="heading-text">Voices</h3>
+        <form id="supportersFrm" name="supportersFrm" action="supporters/save" method="post" class="form-horizontal">
+            <div class="form-box">
+                <h4 >Parent Letter</h4>
+                <fieldset>
+                    <input type="hidden" name="type" value="parent">
+                    <div class="form-grp"><input class="50" id="parent-fname" placeholder="First Name" type="text" name="fname"></div>
+                    <div class="form-grp"><input class="50" id="parent-lname" placeholder="Last Name" type="text" name="lname"></div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="form-grp"><input class="50" id="parent-email" placeholder="Email" name="email" type="email"></div>
+                    <div class="form-grp"><input class="100" id="parent-addr1" placeholder="Address" name="address_line1" type="text"></div>
+                    <div class="clearfix"></div>
+                    
+                   <div class="form-grp"><input class="100" id="parent-addr2" placeholder="Address line2" name="address_line2" type="text"></div>
+                    <div class="clearfix"></div>
+
+                    <div class="form-grp"><input class="50" id="parent-city" placeholder="City" name="city" type="text"></div>
+                    <div class="form-grp"><input class="50" id="parent-state" placeholder="State" name="state" type="text"></div>
+                    <div class="clearfix"></div>
+                    <div class="form-grp"><input class="50" id="parent-zip" placeholder="Zip Code" name="zip" type="text"></div>
+                    <div class="form-grp"><input class="50" placeholder="Number of Children enrolled in school" name="children" id="children" type="number" min="1" max="12"></div>
+                </fieldset>
+                <br/>
+                <a class="button btn_send_email" href="javascript:void(0);" id="btnQuickSubmitEmail"><span class="loading"><img src="logo.png"> Sending</span><span class="loaded">Send the Email</span></a>&nbsp;
+                <a class="button show-letter show-popup" href="#letterText">Show Letter</a>
+            </div>
+            <div id="letterText" class="overlay">
+                <div role="dialog" class="popup">
+                    <h4 class="popup-head">Below is the text of the email being sent:</h4>
+                    <a class="edit" href="#">Edit Text</a>
+                    <a class="close">&times;</a>
+                    <div class="content">
+                        <div class="email-meta">
+                            <dt>To:</dt>
+                            <dd>seregcomments@nysed.gov</dd><br/>
+                                                            <dt>Re:</dt>
+                            <dd class="email-subject">Comment on proposed rule ID# EDU-27-19-00010-P - From {name}</dd><br/>
+                            <dt>Date:</dt>
+                            <dd>July 8, 2019</dd>
+                        </div>
+                        <div class="email-content"></div>
+                        <div class="email-inputs">
+                            <textarea name="mail_desc" id="email_desc" style="display: none;"></textarea>
+                            <div class="email-signature"></div>
+                        </div>
+                    </div>
+                    <button class="btn_send_email" type="submit"><span class="loading"><img src="logo.png"> Sending</span><span class="loaded">Send the Email</span></button>
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+</main>
+
+<section class="share">
+    <h3 class="heading-text-center">Share</h3>
+    <div class="socialmedia">
+        <a href="https://twitter.com/yaffedorg?lang=en"><img class="socialmedia" src="/assets/social/twitter.svg"></a>
+        <a href="https://www.youtube.com/channel/UCRTgUveROuDiZ9BX4OrJcLQ"><img class="socialmedia" src="/assets/social/youtube.svg"></a>
+        <a href="https://www.facebook.com/yaffed.org/"><img class="socialmedia" src="/assets/social/facebook.svg"></a>
+    </div>
+        
+    
+    
+</section>
+	
+   <!--old code which is in notes went here-->
+
+<script type="text/javascript">
+    (function($) {
+        $(document).ready(function(){
+
+            getCounts();
+
+            window.setInterval(function(){
+              getCounts();
+            }, 5000);
+
+            $('.show-popup').click(function(){
+                var href = $(this).attr('href');
+                $(href).addClass('open');
+            });
+            $('.overlay .popup .close').click(function(){
+                $(this).parents('.overlay').removeClass('open');
+            });
+
+            var emailContent = '<p class="email-desc">I am a yeshiva parent and a yeshiva graduate, and am writing to register my opposition to regulations proposed by the State Education Department.<br /><br />I chose yeshiva education for my {number_of_children} children because I want them to receive an education steeped in the tradition and values of my Jewish heritage and faith. I want my children to receive an education that focuses on Jewish texts as well as Jewish traditions, Jewish history as well as Jewish culture, and Jewish ideals as well as Jewish ideas. In other words, what I want for them is an education that they cannot receive in the public schools.<br /><br />I pay dearly for this privilege. Private school tuition is not cheap, I pay it on top of the income, real estate and other taxes that we all must pay to fund the local public schools, and I do not even receive a tax deduction for it.<br /><br />These proposed regulations would undermine my ability to give my child the education that I chose for him. It would have the government set the educational priorities for my child, instead of the administration of the private school that I chose.<br /><br />These regulations would require that the private school I chose for my child mimic the local public schools by teaching a long list of required courses -- up to 11 for some grades -- and even set the length of time those courses must be offered each week. If I wanted government to dictate my child&#39;s course list and class schedule, I would have chosen the local public schools.<br /><br />The school that I chose for my children has a long school day with an intensive focus on Jewish studies. Government is not qualified to evaluate our Jewish studies classes, yet these proposed regulations empower them to do just that.<br /><br />The proposed regulations infringe on my right as a parent to direct the education of my children, and on the school&#39;s right to set its own educational course and mission.<br /><br />That is neither legal nor necessary.<br /><br />It is not legal because parents have the right to direct the education of their children, and to choose private and religious schools for them.<br /><br />It is not necessary because private and religious schools have a long and proud record of achievement. Their attendance and graduation rates are high, and their students go on to lead successful lives.<br />I myself am a yeshiva graduate. I want my children to experience the same rich education environment that I did.<br /><br />Every day, my children learn the critical thinking, problem solving, language, literacy, and computational skills that are necessary to prepare them for success. I am confident that they will graduate with the skills necessary to function as successful members of society. <br /><br />These proposed new regulations will undermine my ability to provide my children with the education that I have chosen for them.<br /><br />I urge you to respect my ability as a parent to choose the educational direction for my children and to reject these proposed new regulations.</p><div class="email-signature"><p>Sincerely,</p><p>{name_of_parent} <br />{parent_email_address} <br />{parent_address}<br />{parent_city}<br />{parent_state}<br />{parent_zipcode}</p></div>';
+            var emailSubject = 'Comment on proposed rule ID# EDU-27-19-00010-P - From {name}';
+
+            $('#btnQuickSubmitEmail').click(function(e){
+                $('.show-letter').mousedown();
+                $("#supportersFrm").submit();
+            });
+
+            $('.show-letter').mousedown(function(e){
+                e.preventDefault();
+                var children = $('input#children').val();
+                var parentName = $('input#parent-fname').val()+' '+$('input#parent-lname').val();
+                var parentEmail = $('input#parent-email').val();
+                var parentAddress = $('input#parent-addr1').val();
+                var parentCity = $('input#parent-city').val();
+                var parentState = $('input#parent-state').val();
+                var parentZip = $('input#parent-zip').val();
+
+                var emailContentReplica=emailContent;
+                var emailSubjectReplica=emailSubject;
+
+
+                $(".email-inputs textarea#email_desc").css('display','none');
+                $('.email-content').css('display','block');
+                $('.email-inputs').removeClass('email-input-cls');
+
+                if( children !='' ) {
+                    emailContentReplica = emailContentReplica.replace('{number_of_children}', children);
+                }
+                if( parentName !=' ' ) {
+                    emailContentReplica = emailContentReplica.replace('{name_of_parent}', parentName);
+                    emailSubjectReplica = emailSubjectReplica.replace('{name}', parentName);
+                }
+                if( parentEmail !='' ) {
+                    emailContentReplica = emailContentReplica.replace('{parent_email_address}', parentEmail);
+                }
+                if( parentAddress !='' ) {
+                    emailContentReplica = emailContentReplica.replace('{parent_address}', parentAddress);
+                }
+                if( parentCity !='' ) {
+                    emailContentReplica = emailContentReplica.replace('{parent_city}', parentCity);
+                }
+                if( parentState !='' ) {
+                    emailContentReplica = emailContentReplica.replace('{parent_state}', parentState);
+                }
+                if( parentZip !='' ) {
+                    emailContentReplica = emailContentReplica.replace('{parent_zipcode}', parentZip);
+                }
+
+                $('.email-content').html(emailContentReplica);
+                $('.email-subject').html(emailSubjectReplica);
+                seperateInputs();
+            });
+
+            $(".edit").on("click", function(e) {
+                e.preventDefault();
+                seperateInputs();
+                $(".email-inputs textarea#email_desc").css('display','block');
+                $(".email-inputs .email-signature").html($(".email-content .email-signature").html());
+                $(".email-content").css('display','none');
+                $(".email-inputs textarea#email_desc").focus();
+                $(".email-inputs textarea#email_desc").scrollTop(0);
+                $(".email-inputs").addClass('email-input-cls');
+                $("#letterText").scrollTop(0);
+            });
+
+
+            $('#supportersFrm').validate({
+                rules: {
+                    fname: {
+                        required: true,
+                    },
+                    lname: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                    address_line1: {
+                        required: true,
+                    },
+                    /* address_line2: {
+                        required: true,
+                    }, */
+                    city: {
+                        required: true,
+                    },
+                    state: {
+                        required: true,
+                    },
+                    zip: {
+                        required: true,
+                    },
+                    children: {
+                        required: true,
+                        min: 1,
+                        max:12,
+                    },
+                    mail_desc: {
+                        required: true,
+                    }
+                },
+                messages: {
+                    fname: {
+                        required: "Please Enter Your First Name.",
+                    },
+                    lname: {
+                        required: "Please Enter Your Last Name.",
+                    },
+                    email: {
+                        required: "Please Enter Email Address.",
+                        email: "Please Enter Valid Email Address.",
+                    },
+                    address_line1: {
+                        required: "Please Enter Address Line 1.",
+                    },	
+                    /* address_line2: {
+                        required: "Please Enter Address Line 2.",
+                    }, */
+                    city: {
+                        required: "Please Enter Your City.",
+                    },
+                    state: {
+                        required: "Please Enter Your State.",
+                    },
+                    zip: {
+                        required: "Please Enter Zip Code.",
+                    },
+                    children: {
+                        required: "Please Enter Number of Children.",
+                        min: "Number of Children must be greater than 0.",
+                        max: "Number of Children must be less Then Or equal To 12."
+                    },
+                    mail_desc: {
+                        required: "Please Enter Mail Description.",
+                    }
+                }
+            });
+
+            var isFirstSubmitRequest=true;
+
+            $("#supportersFrm").submit(function(e){
+
+            
+                if($("#supportersFrm").valid())
+                {
+                    e.preventDefault();	
+                    if(isFirstSubmitRequest===true)
+                    {
+                        isFirstSubmitRequest=false;
+                        var frmObj = $(this);
+                        var frmURL = frmObj.attr("action");
+                        var frmData = frmObj.serialize();
+
+                            $(".btn_send_email").addClass("loading");
+                        $.ajax({
+                            url: frmURL,
+                        	type: 'POST',
+                            data:  frmData,
+                            dataType: "json",
+                        	success: function(jsonResponse)
+                            {
+                                    $(".btn_send_email").removeClass("loading");
+                                    if(jsonResponse.success==1)
+                                    {
+                                        alert(jsonResponse.message);
+                                        location.reload(true);
+                                    }
+                                    else
+                                    {				
+                                        alert(jsonResponse.message);
+                                        isFirstSubmitRequest=true;
+                                        return false;
+                                    }
+                            }     
+                        });
+                    }
+                } else {
+                    // close popup
+                    $('#letterText.overlay').removeClass('open');
+                }
+                return false;
+            });//Submit the form
+
+            getSupporters(0);
+
+            /* $(".load-first").mousedown(function(e){
+                e.preventDefault();
+                $(this).attr("disabled", true);
+                var page = $(".load_more").data('val');
+                getSupporters(page);
+            });
+            
+            $(".load_more").click(function(e){
+                e.preventDefault();
+                $(this).attr("disabled", true);
+                var page = $(this).data('val');
+                getSupporters(page);
+            }); */
+
+            $("#allSupporters .content").scroll(function(e) {
+                if($("#allSupporters .content").scrollTop() > $("#allSupporters .content ul.getSupporters-ajax").height() - $("#allSupporters .content").height() - 100) {
+                    e.preventDefault();
+                    var page = $(".load_more").data('val');
+                    getSupporters(page);
+                }
+            });
+
+        });
+
+        var getCounts = function(){
+
+            $.ajax({
+                url:"https://voice.pearlsny.org/supporters/getCounts",
+                type:'POST',
+                dataType: "json",
+                data: '',
+                success: function(response)
+                {
+                    $('.cnt-parent').html(response.data.parent);
+                    $('.cnt-children').html(response.data.children);
+                }
+            });
+        }
+
+        var supportersListRequested = false;
+        var endOfSupportersListReached = false;
+        var getSupporters = function(page){
+
+            if(!supportersListRequested){
+                supportersListRequested=true;
+                $.ajax({
+                    url:"https://voice.pearlsny.org/supporters/loadMore",
+                    type:'POST',
+                    dataType: "json",
+                    data: {page:page},
+                    success: function(response)
+                    {
+                        if( response.success == 1 ){
+                            /* var classToAjax;
+                            if( response.data.page == 0 ) {
+                                classToAjax = '.getSupporters-ajax';
+                            } else {
+                                classToAjax = '.getSupporters-ajax.get-new-supporters-ajax';
+                            } */
+                            $.each(response.data.data,function(index, value){
+                                var liContent='<li data-id="'+value.id+'">'+value.fname+' '+value.lname+'</li>';
+                                if(response.data.page == 0) {
+                                    $('.getSupporters-ajax').append(liContent);
+                                }
+                                else{
+                                    $('#allSupporters .getSupporters-ajax').append(liContent);
+                                }
+                            });
+                            if(response.data.page == 0) {
+                                $('.getSupporters-ajax.auto_scrolling_list').marquee({
+                                    /* allowCss3Support: true,
+                                    css3easing: 'linear', */
+                                    delayBeforeStart: 0,
+                                    direction: 'up',
+                                    duplicated: true,
+                                    duration: 20000,
+                                    gap: 0,
+                                    pauseOnCycle: false,
+                                    pauseOnHover: false,
+                                    startVisible: true
+                                });
+                            }
+                            $('.load_more').data('val', ($('.load_more').data('val')+1));
+                            $('.load-first').attr("disabled", false);
+                            /* $('.load_more').attr("disabled", false); */
+                        }
+                        if( response.data.last_record ) {
+                            endOfSupportersListReached=true;
+                            $(".load_more").addClass("nomore");
+                            /* $(".load_more").hide(); */
+                        }
+                        supportersListRequested=false;
+                    }
+                });
+            }
+        }
+
+        var seperateInputs = function(){
+            var mailDesc = $(".email-content .email-desc").html();
+            $('.email-inputs textarea#email_desc').val(mailDesc.replace(/<br\s*[\/]?>/gi, "\n"));
+        }
+        
+
+
+    })(jQuery);
+    
+    (function($) {
+        $(document).ready(function () {
+            $('nav span.mobile-menu').click(function(){
+                $('nav ul').toggleClass('display-nav');
+            });	
+        });
+    })(jQuery);
+    
+    (function($) {
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    })(jQuery);
+    
+    (function($) {
+        $(document).ready(function(){
+            $.fn.visible = function(partial) {
+
+                var $t            = $(this),
+                    $w            = $(window),
+                    viewTop       = $w.scrollTop(),
+                    viewBottom    = viewTop + $w.height(),
+                    top          = $t.offset().top,
+                    bottom       = top + $t.height(),
+                    compareTop    = partial === true ? bottom : top,
+                    compareBottom = partial === true ? top : bottom;
+
+            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+            };
+            
+            $(window).scroll(function(event) {
+                $(".form-box").each(function(i, el) {
+                var el = $(el);
+                if (el.visible(true)) {
+                    el.addClass("round4"); 
+                } 
+                });
+            });
+        });
+    })(jQuery);
+    
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</body>	
+</html>
