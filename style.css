@@ -831,6 +831,7 @@ span.a2a_svg.a2a_s__default.a2a_s_linkedin {
   .banner-box2 p {
     text-align: center;
     /*padding: 0px 50px;*/
+    margin-right: 3vw;
   }
   /*.banner-box1 h1 {
 		padding: 0px 50px;
@@ -969,6 +970,7 @@ img.graphics {
   width: 40vw;
   float: right;
   text-align: left !important;
+  margin-right: 3vw;
 }
 
 img.socialmedia {
@@ -1179,5 +1181,14 @@ section.form {
 
 p.explain {
   text-align: left;
+}
+
+section.writtenletter {
+  margin-top: -60vw;
+  margin-left: 3vw;
+}
+
+.landing-text {
+  margin-left: 6vw;
 }
 /*# sourceMappingURL=style.css.map */

@@ -71,6 +71,7 @@ header a img {
 .banner .banner-box2 {
 	width: 60%;
 	float: left;
+	
 }
 
 .banner-box1 h1 {
@@ -843,6 +844,7 @@ span.a2a_svg.a2a_s__default.a2a_s_linkedin {
 	.banner-box2 p {
 		text-align: center;
 		/*padding: 0px 50px;*/
+		margin-right:3vw;
 	}
 	/*.banner-box1 h1 {
 		padding: 0px 50px;
@@ -983,7 +985,7 @@ span.a2a_svg.a2a_s__default.a2a_s_linkedin {
 
 img.graphics {max-width:15vw;}
 
-.explain {width:40vw;float:right; text-align:left !important;}
+.explain {width:40vw;float:right; text-align:left !important;margin-right:3vw;}
 
 img.socialmedia {max-width:3vw;display:inline-block;}
 
@@ -1106,4 +1108,6 @@ section.form {margin-top:25vw;grid-column: 2/3;}
 
 p.explain {text-align:left;}
 
+section.writtenletter {margin-top:-60vw;margin-left:3vw;}
 
+.landing-text {margin-left:6vw;}
