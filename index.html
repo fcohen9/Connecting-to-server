@@ -78,9 +78,7 @@
         <img class="graphics large" src="/assets/money.svg"></div>
 
     </section> 
-    <input type="button" value="Clear" id="clear" class="btn__letter"> 
-                
-    <!--<textarea id='output' class="writeyourown"></textarea>-->
+   
     <div class="letter__wrapper">
             <div class="sendaletterinstructions">
                     <h3 class="sendaletter">Send A Letter</h3>
@@ -98,25 +96,25 @@
                     <input type="hidden" name="type" value="parent">
                     
                     <div class="name">
-                        <div class="form-grp"><p>First Name</p><input class="50" id="parent-fname"  type="text" name="fname"></div>
+                        <div class="form-grp"><p>First Name</p><input class="50" id="fname"  type="text" name="fname"></div>
 
-                        <div class="form-grp"><p>Last Name</p><input class="50" id="parent-lname"  type="text" name="lname"></div>
+                        <div class="form-grp"><p>Last Name</p><input class="50" id="lname"  type="text" name="lname"></div>
                     </div>
                     
                     <div class="emailphone">
-                        <div class="form-grp"><label for="email"><p>Email <span class="required">*</span></p></label><input id="parent-email" type="email" required /></div>
+                        <div class="form-grp"><label for="email"><p>Email <span class="required">*</span></p></label><input id="email" type="email" required /></div>
 
                         
 
-                        <div class="form-grp"><p>Phone Number</p><input class="50" id="parent-email" placeholder="### #### ####" name="phone" type="tel"></div>
+                        <div class="form-grp"><p>Phone Number</p><input class="50" id="phone" placeholder="### #### ####" name="phone" type="tel"></div>
                     </div>
 
                     <div class="address">
-                        <div class="form-grp"><p>Address</p><input class="100" id="parent-addr1" name="address_line1" type="text"></div>
+                        <div class="form-grp"><p>Address</p><input class="100" id="addr1" name="address_line1" type="text"></div>
                 
-                        <div class="form-grp"><p>Address Line 2</p><input class="100" id="parent-addr2" name="address_line2" type="text"></div>
+                        <div class="form-grp"><p>Address Line 2</p><input class="100" id="addr2" name="address_line2" type="text"></div>
 
-                        <div class="threecolumns"><div class="form-grp"><p>City</p><input class="50" id="parent-city" name="city" type="text"></div>
+                        <div class="threecolumns"><div class="form-grp"><p>City</p><input class="50" id="city" name="city" type="text"></div>
                         
                         <div class="form-grp state">
                         <p class="state">State</p><labe for="state" placeholder="AL" name="state" id="state"> 
@@ -174,7 +172,7 @@
                                 <option value="WY">WY</option>
                             </select></div>
 
-                        <div class="form-grp zip"><p class="state">Zip Code</p><input class="50" id="parent-zip" placeholder="#####" name="zip" type="text"></div>
+                        <div class="form-grp zip"><p class="state">Zip Code</p><input class="50" id="zip" placeholder="#####" name="zip" type="text"></div>
 
                         <div class="form-grp subscribe"><p class="state">Subscribe to our emails
                         <input type="checkbox" name="subscribe" value="subscribe"></p></div>
@@ -213,12 +211,12 @@
         <h3 class="instructions">Send this letter, edit it, or write your own</h3
 
     <div contenteditable="true">>-->
-            <div id="writeyourown" class="tab_content">
-                    <div class="form-grp__edit"><textarea class="writeyourown"></textarea></div></div>
+            
            
         
             <div id="general-public" class="tab_content">
                     <div class="form-grp__edit">
+                            <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
                             <p class="letter__text">
 
                                     <textarea id="letter output" readonly> GENERAL PUBLIC: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
@@ -232,11 +230,12 @@ As the new school year approaches, thousands of newly school-aged children—as 
 We therefore urge State Commissioner Elia and City Chancellor Carranza to enforce Section 3204. These officials are duty-bound to compel these schools to provide the education that the law of New York requires and that the children of New York deserve.
                                         
 Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</textarea></p>
-                                <a class="thisletter"><button class="btn__letter">Send this letter</button></a><input type="button" value="Edit This Letter" class="makeEditable btn__letter">
-                                <a class="writeown"><button class="btn__letter">Write your own</button></a></div></div>
+                                <a class="thisletter"><button class="btn__letter">Send this letter</button></a>
+                                
+                                </div></div>
 
     <div id="yeshiva-grads" class="tab_content">
-            <div class="form-grp__edit">
+            <div class="form-grp__edit"><input type="button" value="Edit This Letter" class="makeEditable btn__letter">
                 <p class="letter__text">
 
                     <textarea id="letter" readonly> YESHIVA GRADS: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
@@ -252,12 +251,15 @@ We therefore urge State Commissioner Elia and City Chancellor Carranza to enforc
 Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</textarea></p>
                         
                         
-                        <a class="thisletter"><button class="btn__letter">Send this letter</button></a><input type="button" value="Edit This Letter" class="makeEditable btn__letter">
-                        <a class="writeown"><button class="btn__letter">Write your own</button></a>
+                        <a class="thisletter"><button class="btn__letter">Send this letter</button></a>
+                        
                     </div></div>
 
                 <div id="yeshiva-parents" class="tab_content">
-                        <div class="form-grp__edit"><p class="letter__text">
+                        <div class="form-grp__edit">
+                                <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
+                                
+                                <p class="letter__text">
 
                                 <textarea id="letter" readonly> YESHIVA PARENTS: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
                                 
@@ -273,10 +275,10 @@ Our signatures on this petition evince our resolve to stand up for the rights of
             
             <a class="thisletter"><button class="btn__letter">Send this letter</button></a>
             
-            <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
                                     
-            <a class="writeown"><button class="btn__letter">Write your own</button></a>
-
+            
+            <div id="writeyourown" class="tab_content">
+                    <div class="form-grp__edit"><textarea class="writeyourown"></textarea></div></div>
             
                                     
                        </div></div>
