@@ -8,11 +8,11 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="description" content="ALL CHILDREN DESERVE AN EDUCATION">
 <meta name="keywords" content="">
-<!--<meta name="author" content="yaffed" />
+<meta name="author" content="yaffed" />
 <meta property="og:url" content="https://yaffed.org/regulations" />
 <meta property="og:title" content="yaffed" />
 <meta property="og:site_name" content="yaffed" />
-<meta property="og:description" content="yaffed" />-->
+<meta property="og:description" content="yaffed" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -20,32 +20,32 @@
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<script src="script.js"></script>
 
 </head>
+
 <body>
+    
     <header role="banner">
     <a href="https://yaffed.org/">
-                    <img src="/assets/logo.svg">
+        <img src="/assets/old-logo.png">
     </a>
-</header>	
+    </header>	
 
-<main role="article">
-    <article class="banner">
+    <main>
+
+        <article class="banner">
+
+
+            <div class="megaphone"><img class="megaphone" src="/assets/megaphone-outline.svg"></div> 
+
+
         <section class="banner-box1">
-            <div class="landing-text"><h1 role="main">EQUAL EDUCATION FOR ALL
-            <span IT'S THE LAW. ASK THE NYS EDUCATION DEPT. TO DO THEIR JOBS AND ENFORCE IT.</span>
-            </h1></div>
-                <div class="megaphone"><img class="megaphone" src="/assets/megaphone.svg"></div> 
-        </section>
-
+            <div class="landing-text">
+                <h1>Every Child Deserves An Education</h1>
+                <h2> IT'S THE LAW. ASK THE NYS EDUCATION DEPT. TO DO THEIR JOBS AND ENFORCE IT.</h2>
+            </div>
         
-
-
-        <section class="banner-box2" role="group">
-            <p class="explain"> <p class="explain">Your Voice Matters.</p>
-
-            <p class="explain">2 Minutes of Your Time Can Make A Difference</p>
                 
             <p class="explain">  In New York State, tens of thousands of children are being denied a secular education in Hasidic and ultra-Orthodox yeshivas. </p>
                 
@@ -55,64 +55,72 @@
                 
             <p class="explain">   On July 3rd, the State Education Department proposed regulations to make sure every private school, including yeshivas, is providing instruction in English, math, science, and social studies. The state is now soliciting public comment on these regulations before presenting them to the Board of Regents for approval. </p>
                 
-            <p class="explain"> WE URGE YOU TO MAKE YOUR VOICE HEARD: Let the State Education Department know that you support efforts to ensure all children, regardless of where they go to school, receive the education to which they are entitled under law. 
-                </p>
+            <p class="explain"> WE URGE YOU TO MAKE YOUR VOICE HEARD: Let the State Education Department know that you support efforts to ensure all children, regardless of where they go to school, receive the education to which they are entitled under law. </p>
         </section>
-
+    
+        
     </article>
-
+<div class="didyouknow">
+    <h3 class="didyouknow">Did you know?</h3></div>
+    
     <section class="graphics"> 
     
-        <div class="graphics"><p class="graphics">That at least 50,000 Hasidic children in New York receive little secular education and many receive no secular education at all?</p>
+        <div class="graphics"><p class="graphics">At least 50,000 Hasidic children in New York receive little secular education and many receive no secular education at all?</p>
         <img class="graphics" src="/assets/boy-chart.svg"></div>
 
-        <div class="graphics"><p class="graphics"> That only about 5% of Hasidic boys receive an accredited high school diploma and lack the basic skills for work?</p>
+        <div class="graphics"><p class="graphics"> Only about 5% of Hasidic boys receive an accredited high school diploma and lack the basic skills for work?</p>
         <img class="graphics" src="/assets/diploma.svg"></div>
 
-        <div class="graphics"> <p class="graphics">That a disproportionately high percentage of Hasidic yeshiva graduates rely on some form of government assistance?</p>
-        <img class="graphics" src="/assets/pie-chart.svg"></div>
+        <div class="graphics"> <p class="graphics">A disproportionately high percentage of Hasidic yeshiva graduates rely on some form of government assistance?</p>
+        <img class="graphics small" src="/assets/pie-chart.svg"></div>
 
-        <div class="graphics"><p class="graphics">That many Hasidic Yeshivas that don’t provide a basic secular education receive millions of your tax dollars from government programs? </p>
+        <div class="graphics"><p class="graphics">Many Hasidic Yeshivas that don’t provide a basic secular education receive millions of your tax dollars from government programs? </p>
         <img class="graphics large" src="/assets/money.svg"></div>
 
     </section> 
-
-    <section class="letter">
+    <input type="button" value="Clear" id="clear" class="btn__letter"> 
+                
+    <!--<textarea id='output' class="writeyourown"></textarea>-->
+    <div class="letter__wrapper">
+            <div class="sendaletterinstructions">
+                    <h3 class="sendaletter">Send A Letter</h3>
+                    <p class="sendinstructions">Send a letter using a template, edit it, or write your own</p>
+                <p class="furthersendinstructions">Send a letter to the NYS DOE. You do not have to be a Yeshiva graduate to speak out. Anyone concerned about children’s rights should submit comment! If you wish to remain anonymous while sending a comment, only fill in the required email field. The only information that will be seen are fields you fill out.</p></div>
+        <div class="letter">
+                
     <section class="form" role="form">
 
-        <h3 id="form" class="heading-text">Send A Letter</h3>
+        
         <form id="supportersFrm" name="supportersFrm" action="supporters/save" method="post" class="form-horizontal">
             <div class="form-box">
-                <h4 >Letter</h4>
+                
                 <fieldset>
                     <input type="hidden" name="type" value="parent">
                     
                     <div class="name">
-                    <div class="form-grp"><p>First Name</p><input class="50" id="parent-fname" placeholder="First Name" type="text" name="fname"></div>
+                        <div class="form-grp"><p>First Name</p><input class="50" id="parent-fname"  type="text" name="fname"></div>
 
-                    <div class="form-grp"><p>Last Name</p><input class="50" id="parent-lname" placeholder="Last Name" type="text" name="lname"></div></div>
+                        <div class="form-grp"><p>Last Name</p><input class="50" id="parent-lname"  type="text" name="lname"></div>
+                    </div>
                     
                     <div class="emailphone">
-                    <div class="form-grp"><p>Email</p><input class="50" id="parent-email" placeholder="Email" name="email" type="email"></div>
+                        <div class="form-grp"><label for="email"><p>Email <span class="required">*</span></p></label><input id="parent-email" type="email" required /></div>
 
-                    <div class="form-grp"><p>Phone Number</p><input class="50" id="parent-email" placeholder="### #### ####" name="email" type="email"></div></div>
+                        
+
+                        <div class="form-grp"><p>Phone Number</p><input class="50" id="parent-email" placeholder="### #### ####" name="phone" type="tel"></div>
+                    </div>
 
                     <div class="address">
-                    <div class="form-grp"><p>Address</p><input class="100" id="parent-addr1" placeholder="Address" name="address_line1" type="text"></div>
-                    
+                        <div class="form-grp"><p>Address</p><input class="100" id="parent-addr1" name="address_line1" type="text"></div>
+                
+                        <div class="form-grp"><p>Address Line 2</p><input class="100" id="parent-addr2" name="address_line2" type="text"></div>
 
-                    
-
-                    <div class="form-grp"><p>Address Line 2</p><input class="100" id="parent-addr2" placeholder="Address Line 2" name="address_line2" type="text"></div>
-
-                    
-                    <div class="threecolumns"><div class="form-grp"><p>City</p><input class="50" id="parent-city" placeholder="City" name="city" type="text"></div>
-
-                    
-                    <div class="form-grp state">
-                        <p class="state">State</p><label for="state" placeholder="AL" name="state" id="state"> 
+                        <div class="threecolumns"><div class="form-grp"><p>City</p><input class="50" id="parent-city" name="city" type="text"></div>
+                        
+                        <div class="form-grp state">
+                        <p class="state">State</p><labe for="state" placeholder="AL" name="state" id="state"> 
                             <select class="state" id="state">
-                                
                                 <option value="0">AL</option>
                                 <option value="1">AK</option>
                                 <option value="2">AR</option>
@@ -164,914 +172,150 @@
                                 <option value="WI">WI</option>
                                 <option value="WV">WV</option>
                                 <option value="WY">WY</option>
-                            </select>
-                        
-                    </label>  </div>
+                            </select></div>
 
-                    <div class="form-grp zip"><p class="state">Zip Code</p><input class="50" id="parent-zip" placeholder="Zip Code" name="zip" type="text"></div></div></div>
+                        <div class="form-grp zip"><p class="state">Zip Code</p><input class="50" id="parent-zip" placeholder="#####" name="zip" type="text"></div>
+
+                        <div class="form-grp subscribe"><p class="state">Subscribe to our emails
+                        <input type="checkbox" name="subscribe" value="subscribe"></p></div>
+                    </div>
+
+                    
 
 
-                    <div class="form-grp"></div>
+                    <div class="btn__form-grp"><a class="send"><button class="send">Send</button></a></div>
                 </fieldset>
-                <br/>
+                <!--<br/>
                 <a class="button btn_send_email" href="javascript:void(0);" id="btnQuickSubmitEmail"><span class="loading"><img src="/assets/logo.svg"> Sending</span><span class="loaded">Send an Email Using Template</span></a>&nbsp;
                 <a class="button show-letter show-popup-writeyourown" href="#letterText">Show Letter Template</a>
-                <a class="button show-letter show-popup-writeyourown" href="#letterText">Write Your Own</a>
+                <a class="button show-letter show-popup-writeyourown" href="#letterText">Write Your Own</a>-->
             </div>
-            <div id="letterText" class="overlay">
-                <div role="dialog" class="popup">
-                    <h4 class="popup-head">Below is the text of the email being sent:</h4>
-                    <a class="edit" href="#">Edit Text</a>
-                    <a class="close">&times;</a>
-                    <div class="content">
-                        <div class="email-meta">
-                            <dt>To:</dt>
-                            <dd>seregcomments@nysed.gov</dd><br/>
-                                                            <dt>Re:</dt>
-                            <dd class="email-subject">Comment on proposed rule ID# EDU-27-19-00010-P - From {name}</dd><br/>
-                            <dt>Date:</dt>
-                            <dd>July 8, 2019</dd>
-                        </div>
-                        <div class="email-content"></div>
-                        <div class="email-inputs">
-                            <textarea name="mail_desc" id="email_desc" style="display: none;"></textarea>
-                            <div class="email-signature"></div>
-                        </div>
-                    </div>
-                    <button class="btn_send_email" type="submit"><span class="loading"><img src="/assets/logo.svg"> Sending</span><span class="loaded">Send the Email</span></button>
-                </div>
-            </div>
+            
         </form>
 
     </section>
+   
     <section class="writtenletter">
+            <div class="btn__changetemplate">
+                    <ul class="tabs">
+                            <li><a class="btn__changetemplate" href="#general-public"><button class="btn__changetemplate">General Public</button></a></li>
+                            <li><a class="btn__changetemplate" href="#yeshiva-grads"><button class="btn__changetemplate">Yeshiva Grads</button></a></li>
+                            <li><a class="btn__changetemplate" href="#yeshiva-parents"><button class="btn__changetemplate">Yeshiva Parents</button></a></li>
+                            <li><a class="btn__changetemplate" href="#writeyourown"><button class="btn__changetemplate">Write Your Own</button></a></li>
+                          </ul></div>
 
-<p>We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements.
+                    <!--<a class="btn__changetemplate"><button class="btn__changetemplate">Yeshiva Grads</button>
+                    </a>
+                    <a class="btn__changetemplate"><button class="btn__changetemplate">Yeshiva Parents</button>
+                    </a>
+                    <a class="btn__changetemplate"><button class="btn__changetemplate">General Public</button>
+                    </a></div>
+        <h3 class="instructions">Send this letter, edit it, or write your own</h3
 
-    The problem is particularly acute as regards many of New York’s Hasidic and ultra-Orthodox yeshivas.
+    <div contenteditable="true">>-->
+            <div id="writeyourown" class="tab_content">
+                    <div class="form-grp__edit"><textarea class="writeyourown"></textarea></div></div>
+           
+        
+            <div id="general-public" class="tab_content">
+                    <div class="form-grp__edit">
+                            <p class="letter__text">
+
+                                    <textarea id="letter output" readonly> GENERAL PUBLIC: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
+                                    
+The problem is particularly acute as regards many of New York’s Hasidic and ultra-Orthodox yeshivas. New York State Education Law (Article 65, Section 3204) mandates that all children attending non-public schools receive an education that is “substantially equivalent” to that of public schools. More specifically, the law requires all non-public schools to provide instruction in English, mathematics, science and social studies among other subjects.
+                                        
+The law notwithstanding, many of New York State’s Hasidic and ultra-Orthodox yeshivas are not meeting these requirements, to the detriment of the tens of thousands of students who attend these schools. Even more disturbing is that the New York State and New York City Departments of Education have done little to address this problem, despite having been aware of it for many years.
+                                        
+As the new school year approaches, thousands of newly school-aged children—as well as those already enrolled—will receive a substandard secular education or no secular education at all. Despite all their years in the classroom, the students in these many yeshivas will leave 12th grade without having received that which New York’s Court of Appeals has repeatedly affirmed is required under the law—namely a “sound basic education.” The majority of these students are, as a result, ill-prepared to enter the workforce or to contribute productively to the larger society.
+                                        
+We therefore urge State Commissioner Elia and City Chancellor Carranza to enforce Section 3204. These officials are duty-bound to compel these schools to provide the education that the law of New York requires and that the children of New York deserve.
+                                        
+Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</textarea></p>
+                                <a class="thisletter"><button class="btn__letter">Send this letter</button></a><input type="button" value="Edit This Letter" class="makeEditable btn__letter">
+                                <a class="writeown"><button class="btn__letter">Write your own</button></a></div></div>
+
+    <div id="yeshiva-grads" class="tab_content">
+            <div class="form-grp__edit">
+                <p class="letter__text">
+
+                    <textarea id="letter" readonly> YESHIVA GRADS: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
+                    
+The problem is particularly acute as regards many of New York’s Hasidic and ultra-Orthodox yeshivas. New York State Education Law (Article 65, Section 3204) mandates that all children attending non-public schools receive an education that is “substantially equivalent” to that of public schools. More specifically, the law requires all non-public schools to provide instruction in English, mathematics, science and social studies among other subjects.
+                        
+The law notwithstanding, many of New York State’s Hasidic and ultra-Orthodox yeshivas are not meeting these requirements, to the detriment of the tens of thousands of students who attend these schools. Even more disturbing is that the New York State and New York City Departments of Education have done little to address this problem, despite having been aware of it for many years.
+                        
+As the new school year approaches, thousands of newly school-aged children—as well as those already enrolled—will receive a substandard secular education or no secular education at all. Despite all their years in the classroom, the students in these many yeshivas will leave 12th grade without having received that which New York’s Court of Appeals has repeatedly affirmed is required under the law—namely a “sound basic education.” The majority of these students are, as a result, ill-prepared to enter the workforce or to contribute productively to the larger society.
+                        
+We therefore urge State Commissioner Elia and City Chancellor Carranza to enforce Section 3204. These officials are duty-bound to compel these schools to provide the education that the law of New York requires and that the children of New York deserve.
+                        
+Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</textarea></p>
+                        
+                        
+                        <a class="thisletter"><button class="btn__letter">Send this letter</button></a><input type="button" value="Edit This Letter" class="makeEditable btn__letter">
+                        <a class="writeown"><button class="btn__letter">Write your own</button></a>
+                    </div></div>
+
+                <div id="yeshiva-parents" class="tab_content">
+                        <div class="form-grp__edit"><p class="letter__text">
+
+                                <textarea id="letter" readonly> YESHIVA PARENTS: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
+                                
+            The problem is particularly acute as regards many of New York’s Hasidic and ultra-Orthodox yeshivas. New York State Education Law (Article 65, Section 3204) mandates that all children attending non-public schools receive an education that is “substantially equivalent” to that of public schools. More specifically, the law requires all non-public schools to provide instruction in English, mathematics, science and social studies among other subjects.
+                                    
+            The law notwithstanding, many of New York State’s Hasidic and ultra-Orthodox yeshivas are not meeting these requirements, to the detriment of the tens of thousands of students who attend these schools. Even more disturbing is that the New York State and New York City Departments of Education have done little to address this problem, despite having been aware of it for many years.
+                                    
+            As the new school year approaches, thousands of newly school-aged children—as well as those already enrolled—will receive a substandard secular education or no secular education at all. Despite all their years in the classroom, the students in these many yeshivas will leave 12th grade without having received that which New York’s Court of Appeals has repeatedly affirmed is required under the law—namely a “sound basic education.” The majority of these students are, as a result, ill-prepared to enter the workforce or to contribute productively to the larger society.
+                                    
+            We therefore urge State Commissioner Elia and City Chancellor Carranza to enforce Section 3204. These officials are duty-bound to compel these schools to provide the education that the law of New York requires and that the children of New York deserve.
+                                    
+            Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</textarea></p>
+            
+            <a class="thisletter"><button class="btn__letter">Send this letter</button></a>
+            
+            <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
+                                    
+            <a class="writeown"><button class="btn__letter">Write your own</button></a>
+
+            
+                                    
+                       </div></div>
+                            
+                            
+                        
+                    </section>                            
+</div>
+
+                            
     
-    New York State Education Law (Article 65, Section 3204) mandates that all children attending non-public schools receive an education that is “substantially equivalent” to that of public schools. More specifically, the law requires all non-public schools to provide instruction in English, mathematics, science and social studies among other subjects.
-    
-    The law notwithstanding, many of New York State’s Hasidic and ultra-Orthodox yeshivas are not meeting these requirements, to the detriment of the tens of thousands of students who attend these schools. Even more disturbing is that the New York State and New York City Departments of Education have done little to address this problem, despite having been aware of it for many years.
-    
-    As the new school year approaches, thousands of newly school-aged children—as well as those already enrolled—will receive a substandard secular education or no secular education at all. Despite all their years in the classroom, the students in these many yeshivas will leave 12th grade without having received that which New York’s Court of Appeals has repeatedly affirmed is required under the law—namely a “sound basic education.” The majority of these students are, as a result, ill-prepared to enter the workforce or to contribute productively to the larger society.
-    
-    We therefore urge State Commissioner Elia and City Chancellor Carranza to enforce Section 3204. These officials are duty-bound to compel these schools to provide the education that the law of New York requires and that the children of New York deserve.
-    
-    Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</p>
 </section></section>
-
+</div></div>
+<section class="share">
+        <h3 class="heading-text-center">Share</h3>
+        <div class="socialmedia">
+            <a href="https://twitter.com/yaffedorg?lang=en"><img class="socialmedia" src="/assets/social/twitter.svg"></a>
+            <a href="https://www.youtube.com/channel/UCRTgUveROuDiZ9BX4OrJcLQ"><img class="socialmedia" src="/assets/social/youtube.svg"></a>
+            <a href="https://www.facebook.com/yaffed.org/"><img class="socialmedia" src="/assets/social/facebook.svg"></a>
+        </div>
+            
+        
+        
+    </section>
 </main>
 
-<section class="share">
-    <h3 class="heading-text-center">Share</h3>
-    <div class="socialmedia">
-        <a href="https://twitter.com/yaffedorg?lang=en"><img class="socialmedia" src="/assets/social/twitter.svg"></a>
-        <a href="https://www.youtube.com/channel/UCRTgUveROuDiZ9BX4OrJcLQ"><img class="socialmedia" src="/assets/social/youtube.svg"></a>
-        <a href="https://www.facebook.com/yaffed.org/"><img class="socialmedia" src="/assets/social/facebook.svg"></a>
-    </div>
-        
-    
-    
-</section>
+
+
+
+
+
+
+
+
+
+
+
 	
-   <!--old code which is in notes went here-->
-
-   <!--script 1: editable template -->
-<script type="text/javascript">
-    (function($) {
-        $(document).ready(function(){
-
-            getCounts();
-
-            window.setInterval(function(){
-              getCounts();
-            }, 5000);
-
-            $('.show-popup-writeyourown').click(function(){
-                var href = $(this).attr('href');
-                $(href).addClass('open');
-            });
-            $('.overlay .popup .close').click(function(){
-                $(this).parents('.overlay').removeClass('open');
-            });
-
-            var emailContent = '<p class="email-desc">We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements.<br /></ br>The problem is particularly acute as regards many of New York’s Hasidic and ultra-Orthodox yeshivas.<br /></ br>New York State Education Law (Article 65, Section 3204) mandates that all children attending non-public schools receive an education that is “substantially equivalent” to that of public schools. More specifically, the law requires all non-public schools to provide instruction in English, mathematics, science and social studies among other subjects.<br /></ br>The law notwithstanding, many of New York State’s Hasidic and ultra-Orthodox yeshivas are not meeting these requirements, to the detriment of the tens of thousands of students who attend these schools. Even more disturbing is that the New York State and New York City Departments of Education have done little to address this problem, despite having been aware of it for many years.<br /></ br>As the new school year approaches, thousands of newly school-aged children—as well as those already enrolled—will receive a substandard secular education or no secular education at all. Despite all their years in the classroom, the students in these many yeshivas will leave 12th grade without having received that which New York’s Court of Appeals has repeatedly affirmed is required under the law—namely a “sound basic education.” The majority of these students are, as a result, ill-prepared to enter the workforce or to contribute productively to the larger society.<br /></ br>We therefore urge State Commissioner Elia and City Chancellor Carranza to enforce Section 3204. These officials are duty-bound to compel these schools to provide the education that the law of New York requires and that the children of New York deserve.<br /></ br>Our signatures on this petition evince our resolve to stand up for the rights of these children, the welfare of our communities and, indeed, for the rule of law.</p><div class="email-signature"><p>Sincerely,</p><p>{name_of_parent} <br />{parent_email_address} <br />{parent_address}<br />{parent_city}<br />{parent_state}<br />{parent_zipcode}</p></div>';
-            var emailSubject = 'Comment on proposed rule ID# EDU-27-19-00010-P - From {name}';
-
-            $('#btnQuickSubmitEmail').click(function(e){
-                $('.show-letter').mousedown();
-                $("#supportersFrm").submit();
-            });
-
-            $('.show-letter').mousedown(function(e){
-                e.preventDefault();
-                var children = $('input#children').val();
-                var parentName = $('input#parent-fname').val()+' '+$('input#parent-lname').val();
-                var parentEmail = $('input#parent-email').val();
-                var parentAddress = $('input#parent-addr1').val();
-                var parentCity = $('input#parent-city').val();
-                var parentState = $('input#parent-state').val();
-                var parentZip = $('input#parent-zip').val();
-
-                var emailContentReplica=emailContent;
-                var emailSubjectReplica=emailSubject;
-
-
-                $(".email-inputs textarea#email_desc").css('display','none');
-                $('.email-content').css('display','block');
-                $('.email-inputs').removeClass('email-input-cls');
-
-                if( children !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{number_of_children}', children);
-                }
-                if( parentName !=' ' ) {
-                    emailContentReplica = emailContentReplica.replace('{name_of_parent}', parentName);
-                    emailSubjectReplica = emailSubjectReplica.replace('{name}', parentName);
-                }
-                if( parentEmail !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_email_address}', parentEmail);
-                }
-                if( parentAddress !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_address}', parentAddress);
-                }
-                if( parentCity !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_city}', parentCity);
-                }
-                if( parentState !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_state}', parentState);
-                }
-                if( parentZip !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_zipcode}', parentZip);
-                }
-
-                $('.email-content').html(emailContentReplica);
-                $('.email-subject').html(emailSubjectReplica);
-                seperateInputs();
-            });
-
-            $(".edit").on("click", function(e) {
-                e.preventDefault();
-                seperateInputs();
-                $(".email-inputs textarea#email_desc").css('display','block');
-                $(".email-inputs .email-signature").html($(".email-content .email-signature").html());
-                $(".email-content").css('display','none');
-                $(".email-inputs textarea#email_desc").focus();
-                $(".email-inputs textarea#email_desc").scrollTop(0);
-                $(".email-inputs").addClass('email-input-cls');
-                $("#letterText").scrollTop(0);
-            });
-
-
-            /*$('#supportersFrm').validate({
-                rules: {
-                    fname: {
-                        required: true,
-                    },
-                    lname: {
-                        required: true,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-                    address_line1: {
-                        required: true,
-                    },
-                    /* address_line2: {
-                        required: true,
-                    }, *
-                    city: {
-                        required: true,
-                    },
-                    state: {
-                        required: true,
-                    },
-                    zip: {
-                        required: true,
-                    },
-                    children: {
-                        required: true,
-                        min: 1,
-                        max:12,
-                    },
-                    mail_desc: {
-                        required: true,
-                    }
-                },
-                messages: {
-                    fname: {
-                        required: "Please Enter Your First Name.",
-                    },
-                    lname: {
-                        required: "Please Enter Your Last Name.",
-                    },
-                    email: {
-                        required: "Please Enter Email Address.",
-                        email: "Please Enter Valid Email Address.",
-                    },
-                    address_line1: {
-                        required: "Please Enter Address Line 1.",
-                    },	
-                    /* address_line2: {
-                        required: "Please Enter Address Line 2.",
-                    }, *
-                    city: {
-                        required: "Please Enter Your City.",
-                    },
-                    state: {
-                        required: "Please Enter Your State.",
-                    },
-                    zip: {
-                        required: "Please Enter Zip Code.",
-                    },
-                    children: {
-                        required: "Please Enter Number of Children.",
-                        min: "Number of Children must be greater than 0.",
-                        max: "Number of Children must be less Then Or equal To 12."
-                    },
-                    mail_desc: {
-                        required: "Please Enter Mail Description.",
-                    }
-                }
-            });*/
-
-            var isFirstSubmitRequest=true;
-
-            $("#supportersFrm").submit(function(e){
-
-            
-                if($("#supportersFrm").valid())
-                {
-                    e.preventDefault();	
-                    if(isFirstSubmitRequest===true)
-                    {
-                        isFirstSubmitRequest=false;
-                        var frmObj = $(this);
-                        var frmURL = frmObj.attr("action");
-                        var frmData = frmObj.serialize();
-
-                            $(".btn_send_email").addClass("loading");
-                        $.ajax({
-                            url: frmURL,
-                        	type: 'POST',
-                            data:  frmData,
-                            dataType: "json",
-                        	success: function(jsonResponse)
-                            {
-                                    $(".btn_send_email").removeClass("loading");
-                                    if(jsonResponse.success==1)
-                                    {
-                                        alert(jsonResponse.message);
-                                        location.reload(true);
-                                    }
-                                    else
-                                    {				
-                                        alert(jsonResponse.message);
-                                        isFirstSubmitRequest=true;
-                                        return false;
-                                    }
-                            }     
-                        });
-                    }
-                } else {
-                    // close popup
-                    $('#letterText.overlay').removeClass('open');
-                }
-                return false;
-            });//Submit the form
-
-            getSupporters(0);
-
-            /* $(".load-first").mousedown(function(e){
-                e.preventDefault();
-                $(this).attr("disabled", true);
-                var page = $(".load_more").data('val');
-                getSupporters(page);
-            });
-            
-            $(".load_more").click(function(e){
-                e.preventDefault();
-                $(this).attr("disabled", true);
-                var page = $(this).data('val');
-                getSupporters(page);
-            }); */
-
-            $("#allSupporters .content").scroll(function(e) {
-                if($("#allSupporters .content").scrollTop() > $("#allSupporters .content ul.getSupporters-ajax").height() - $("#allSupporters .content").height() - 100) {
-                    e.preventDefault();
-                    var page = $(".load_more").data('val');
-                    getSupporters(page);
-                }
-            });
-
-        });
-
-        var getCounts = function(){
-
-            $.ajax({
-                url:"https://yaffed.org/regulations",
-                type:'POST',
-                dataType: "json",
-                data: '',
-                success: function(response)
-                {
-                    $('.cnt-parent').html(response.data.parent);
-                    $('.cnt-children').html(response.data.children);
-                }
-            });
-        }
-
-        var supportersListRequested = false;
-        var endOfSupportersListReached = false;
-        var getSupporters = function(page){
-
-            if(!supportersListRequested){
-                supportersListRequested=true;
-                $.ajax({
-                    url:"https://yaffed.org",
-                    type:'POST',
-                    dataType: "json",
-                    data: {page:page},
-                    success: function(response)
-                    {
-                        if( response.success == 1 ){
-                            /* var classToAjax;
-                            if( response.data.page == 0 ) {
-                                classToAjax = '.getSupporters-ajax';
-                            } else {
-                                classToAjax = '.getSupporters-ajax.get-new-supporters-ajax';
-                            } */
-                            $.each(response.data.data,function(index, value){
-                                var liContent='<li data-id="'+value.id+'">'+value.fname+' '+value.lname+'</li>';
-                                if(response.data.page == 0) {
-                                    $('.getSupporters-ajax').append(liContent);
-                                }
-                                else{
-                                    $('#allSupporters .getSupporters-ajax').append(liContent);
-                                }
-                            });
-                            if(response.data.page == 0) {
-                                $('.getSupporters-ajax.auto_scrolling_list').marquee({
-                                    /* allowCss3Support: true,
-                                    css3easing: 'linear', */
-                                    delayBeforeStart: 0,
-                                    direction: 'up',
-                                    duplicated: true,
-                                    duration: 20000,
-                                    gap: 0,
-                                    pauseOnCycle: false,
-                                    pauseOnHover: false,
-                                    startVisible: true
-                                });
-                            }
-                            $('.load_more').data('val', ($('.load_more').data('val')+1));
-                            $('.load-first').attr("disabled", false);
-                            /* $('.load_more').attr("disabled", false); */
-                        }
-                        if( response.data.last_record ) {
-                            endOfSupportersListReached=true;
-                            $(".load_more").addClass("nomore");
-                            /* $(".load_more").hide(); */
-                        }
-                        supportersListRequested=false;
-                    }
-                });
-            }
-        }
-
-        var seperateInputs = function(){
-            var mailDesc = $(".email-content .email-desc").html();
-            $('.email-inputs textarea#email_desc').val(mailDesc.replace(/<br\s*[\/]?>/gi, "\n"));
-        }
-        
-
-
-    })(jQuery);
-    
-    (function($) {
-        $(document).ready(function () {
-            $('nav span.mobile-menu').click(function(){
-                $('nav ul').toggleClass('display-nav');
-            });	
-        });
-    })(jQuery);
-    
-    (function($) {
-        $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    })(jQuery);
-    
-    
-    
-</script>
-
-<!--script 2: write your own-->
-<script type="text/javascript">
-    (function($) {
-        $(document).ready(function(){
-
-            getCounts();
-
-            window.setInterval(function(){
-              getCounts();
-            }, 5000);
-
-            $('.show-popup-writeyourown').click(function(){
-                var href = $(this).attr('href');
-                $(href).addClass('open');
-            });
-            $('.overlay .popup .close').click(function(){
-                $(this).parents('.overlay').removeClass('open');
-            });
-
-            var emailContent = '<p class="email-desc"></p><div class="email-signature"><p>Sincerely,</p><p>{name_of_parent} <br />{parent_email_address} <br />{parent_address}<br />{parent_city}<br />{parent_state}<br />{parent_zipcode}</p></div>';
-            var emailSubject = 'Comment on proposed rule ID# EDU-27-19-00010-P - From {name}';
-
-            $('#btnQuickSubmitEmail').click(function(e){
-                $('.show-letter').mousedown();
-                $("#supportersFrm").submit();
-            });
-
-            $('.show-letter').mousedown(function(e){
-                e.preventDefault();
-                var children = $('input#children').val();
-                var parentName = $('input#parent-fname').val()+' '+$('input#parent-lname').val();
-                var parentEmail = $('input#parent-email').val();
-                var parentAddress = $('input#parent-addr1').val();
-                var parentCity = $('input#parent-city').val();
-                var parentState = $('input#parent-state').val();
-                var parentZip = $('input#parent-zip').val();
-
-                var emailContentReplica=emailContent;
-                var emailSubjectReplica=emailSubject;
-
-
-                $(".email-inputs textarea#email_desc").css('display','none');
-                $('.email-content').css('display','block');
-                $('.email-inputs').removeClass('email-input-cls');
-
-                if( children !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{number_of_children}', children);
-                }
-                if( parentName !=' ' ) {
-                    emailContentReplica = emailContentReplica.replace('{name_of_parent}', parentName);
-                    emailSubjectReplica = emailSubjectReplica.replace('{name}', parentName);
-                }
-                if( parentEmail !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_email_address}', parentEmail);
-                }
-                if( parentAddress !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_address}', parentAddress);
-                }
-                if( parentCity !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_city}', parentCity);
-                }
-                if( parentState !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_state}', parentState);
-                }
-                if( parentZip !='' ) {
-                    emailContentReplica = emailContentReplica.replace('{parent_zipcode}', parentZip);
-                }
-
-                $('.email-content').html(emailContentReplica);
-                $('.email-subject').html(emailSubjectReplica);
-                seperateInputs();
-            });
-
-            $(".edit").on("click", function(e) {
-                e.preventDefault();
-                seperateInputs();
-                $(".email-inputs textarea#email_desc").css('display','block');
-                $(".email-inputs .email-signature").html($(".email-content .email-signature").html());
-                $(".email-content").css('display','none');
-                $(".email-inputs textarea#email_desc").focus();
-                $(".email-inputs textarea#email_desc").scrollTop(0);
-                $(".email-inputs").addClass('email-input-cls');
-                $("#letterText").scrollTop(0);
-            });
-
-
-            /*$('#supportersFrm').validate({
-                rules: {
-                    fname: {
-                        required: true,
-                    },
-                    lname: {
-                        required: true,
-                    },
-                    email: {
-                        required: true,
-                        email: true,
-                    },
-                    address_line1: {
-                        required: true,
-                    },
-                    /* address_line2: {
-                        required: true,
-                    }, *
-                    city: {
-                        required: true,
-                    },
-                    state: {
-                        required: true,
-                    },
-                    zip: {
-                        required: true,
-                    },
-                    children: {
-                        required: true,
-                        min: 1,
-                        max:12,
-                    },
-                    mail_desc: {
-                        required: true,
-                    }
-                },
-                messages: {
-                    fname: {
-                        required: "Please Enter Your First Name.",
-                    },
-                    lname: {
-                        required: "Please Enter Your Last Name.",
-                    },
-                    email: {
-                        required: "Please Enter Email Address.",
-                        email: "Please Enter Valid Email Address.",
-                    },
-                    address_line1: {
-                        required: "Please Enter Address Line 1.",
-                    },	
-                    /* address_line2: {
-                        required: "Please Enter Address Line 2.",
-                    }, *
-                    city: {
-                        required: "Please Enter Your City.",
-                    },
-                    state: {
-                        required: "Please Enter Your State.",
-                    },
-                    zip: {
-                        required: "Please Enter Zip Code.",
-                    },
-                    children: {
-                        required: "Please Enter Number of Children.",
-                        min: "Number of Children must be greater than 0.",
-                        max: "Number of Children must be less Then Or equal To 12."
-                    },
-                    mail_desc: {
-                        required: "Please Enter Mail Description.",
-                    }
-                }
-            });*/
-
-            var isFirstSubmitRequest=true;
-
-            $("#supportersFrm").submit(function(e){
-
-            
-                if($("#supportersFrm").valid())
-                {
-                    e.preventDefault();	
-                    if(isFirstSubmitRequest===true)
-                    {
-                        isFirstSubmitRequest=false;
-                        var frmObj = $(this);
-                        var frmURL = frmObj.attr("action");
-                        var frmData = frmObj.serialize();
-
-                            $(".btn_send_email").addClass("loading");
-                        $.ajax({
-                            url: frmURL,
-                        	type: 'POST',
-                            data:  frmData,
-                            dataType: "json",
-                        	success: function(jsonResponse)
-                            {
-                                    $(".btn_send_email").removeClass("loading");
-                                    if(jsonResponse.success==1)
-                                    {
-                                        alert(jsonResponse.message);
-                                        location.reload(true);
-                                    }
-                                    else
-                                    {				
-                                        alert(jsonResponse.message);
-                                        isFirstSubmitRequest=true;
-                                        return false;
-                                    }
-                            }     
-                        });
-                    }
-                } else {
-                    // close popup
-                    $('#letterText.overlay').removeClass('open');
-                }
-                return false;
-            });//Submit the form
-
-            getSupporters(0);
-
-            /* $(".load-first").mousedown(function(e){
-                e.preventDefault();
-                $(this).attr("disabled", true);
-                var page = $(".load_more").data('val');
-                getSupporters(page);
-            });
-            
-            $(".load_more").click(function(e){
-                e.preventDefault();
-                $(this).attr("disabled", true);
-                var page = $(this).data('val');
-                getSupporters(page);
-            }); */
-
-            $("#allSupporters .content").scroll(function(e) {
-                if($("#allSupporters .content").scrollTop() > $("#allSupporters .content ul.getSupporters-ajax").height() - $("#allSupporters .content").height() - 100) {
-                    e.preventDefault();
-                    var page = $(".load_more").data('val');
-                    getSupporters(page);
-                }
-            });
-
-        });
-
-        var getCounts = function(){
-
-            $.ajax({
-                url:"https://yaffed.org/regulations",
-                type:'POST',
-                dataType: "json",
-                data: '',
-                success: function(response)
-                {
-                    $('.cnt-parent').html(response.data.parent);
-                    $('.cnt-children').html(response.data.children);
-                }
-            });
-        }
-
-        var supportersListRequested = false;
-        var endOfSupportersListReached = false;
-        var getSupporters = function(page){
-
-            if(!supportersListRequested){
-                supportersListRequested=true;
-                $.ajax({
-                    url:"https://yaffed.org/regulations",
-                    type:'POST',
-                    dataType: "json",
-                    data: {page:page},
-                    success: function(response)
-                    {
-                        if( response.success == 1 ){
-                            /* var classToAjax;
-                            if( response.data.page == 0 ) {
-                                classToAjax = '.getSupporters-ajax';
-                            } else {
-                                classToAjax = '.getSupporters-ajax.get-new-supporters-ajax';
-                            } */
-                            $.each(response.data.data,function(index, value){
-                                var liContent='<li data-id="'+value.id+'">'+value.fname+' '+value.lname+'</li>';
-                                if(response.data.page == 0) {
-                                    $('.getSupporters-ajax').append(liContent);
-                                }
-                                else{
-                                    $('#allSupporters .getSupporters-ajax').append(liContent);
-                                }
-                            });
-                            if(response.data.page == 0) {
-                                $('.getSupporters-ajax.auto_scrolling_list').marquee({
-                                    /* allowCss3Support: true,
-                                    css3easing: 'linear', */
-                                    delayBeforeStart: 0,
-                                    direction: 'up',
-                                    duplicated: true,
-                                    duration: 20000,
-                                    gap: 0,
-                                    pauseOnCycle: false,
-                                    pauseOnHover: false,
-                                    startVisible: true
-                                });
-                            }
-                            $('.load_more').data('val', ($('.load_more').data('val')+1));
-                            $('.load-first').attr("disabled", false);
-                            /* $('.load_more').attr("disabled", false); */
-                        }
-                        if( response.data.last_record ) {
-                            endOfSupportersListReached=true;
-                            $(".load_more").addClass("nomore");
-                            /* $(".load_more").hide(); */
-                        }
-                        supportersListRequested=false;
-                    }
-                });
-            }
-        }
-
-        var seperateInputs = function(){
-            var mailDesc = $(".email-content .email-desc").html();
-            $('.email-inputs textarea#email_desc').val(mailDesc.replace(/<br\s*[\/]?>/gi, "\n"));
-        }
-        
-
-
-    })(jQuery);
-    
-    (function($) {
-        $(document).ready(function () {
-            $('nav span.mobile-menu').click(function(){
-                $('nav ul').toggleClass('display-nav');
-            });	
-        });
-    })(jQuery);
-    
-    (function($) {
-        $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    })(jQuery);
-    
-    (function($) {
-        $(document).ready(function(){
-            $.fn.visible = function(partial) {
-
-                var $t            = $(this),
-                    $w            = $(window),
-                    viewTop       = $w.scrollTop(),
-                    viewBottom    = viewTop + $w.height(),
-                    top          = $t.offset().top,
-                    bottom       = top + $t.height(),
-                    compareTop    = partial === true ? bottom : top,
-                    compareBottom = partial === true ? top : bottom;
-
-            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-            };
-            
-            $(window).scroll(function(event) {
-                $(".form-box").each(function(i, el) {
-                var el = $(el);
-                if (el.visible(true)) {
-                    el.addClass("round4"); 
-                } 
-                });
-            });
-        });
-    })(jQuery);
-    
-</script>
-
-<!--script 3: custom state selector-->
-<script>
-        var x, i, j, selElmnt, a, b, c;
-        /*look for any elements with the class "custom-select":*/
-        x = document.getElementsByClassName("custom-select");
-        for (i = 0; i < x.length; i++) {
-          selElmnt = x[i].getElementsByTagName("select")[0];
-          /*for each element, create a new DIV that will act as the selected item:*/
-          a = document.createElement("DIV");
-          a.setAttribute("class", "select-selected");
-          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-          x[i].appendChild(a);
-          /*for each element, create a new DIV that will contain the option list:*/
-          b = document.createElement("DIV");
-          b.setAttribute("class", "select-items select-hide");
-          for (j = 1; j < selElmnt.length; j++) {
-            /*for each option in the original select element,
-            create a new DIV that will act as an option item:*/
-            c = document.createElement("DIV");
-            c.innerHTML = selElmnt.options[j].innerHTML;
-            c.addEventListener("click", function(e) {
-                /*when an item is clicked, update the original select box,
-                and the selected item:*/
-                var y, i, k, s, h;
-                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                h = this.parentNode.previousSibling;
-                for (i = 0; i < s.length; i++) {
-                  if (s.options[i].innerHTML == this.innerHTML) {
-                    s.selectedIndex = i;
-                    h.innerHTML = this.innerHTML;
-                    y = this.parentNode.getElementsByClassName("same-as-selected");
-                    for (k = 0; k < y.length; k++) {
-                      y[k].removeAttribute("class");
-                    }
-                    this.setAttribute("class", "same-as-selected");
-                    break;
-                  }
-                }
-                h.click();
-            });
-            b.appendChild(c);
-          }
-          x[i].appendChild(b);
-          a.addEventListener("click", function(e) {
-              /*when the select box is clicked, close any other select boxes,
-              and open/close the current select box:*/
-              e.stopPropagation();
-              closeAllSelect(this);
-              this.nextSibling.classList.toggle("select-hide");
-              this.classList.toggle("select-arrow-active");
-            });
-        }
-        function closeAllSelect(elmnt) {
-          /*a function that will close all select boxes in the document,
-          except the current select box:*/
-          var x, y, i, arrNo = [];
-          x = document.getElementsByClassName("select-items");
-          y = document.getElementsByClassName("select-selected");
-          for (i = 0; i < y.length; i++) {
-            if (elmnt == y[i]) {
-              arrNo.push(i)
-            } else {
-              y[i].classList.remove("select-arrow-active");
-            }
-          }
-          for (i = 0; i < x.length; i++) {
-            if (arrNo.indexOf(i)) {
-              x[i].classList.add("select-hide");
-            }
-          }
-        }
-        /*if the user clicks anywhere outside the select box,
-        then close all select boxes:*/
-        document.addEventListener("click", closeAllSelect);
-        </script>
-
-<script>
-(function($) {
-    $(document).ready(function(){
-        $.fn.visible = function(partial) {
-
-            var $t            = $(this),
-                $w            = $(window),
-                viewTop       = $w.scrollTop(),
-                viewBottom    = viewTop + $w.height(),
-                top          = $t.offset().top,
-                bottom       = top + $t.height(),
-                compareTop    = partial === true ? bottom : top,
-                compareBottom = partial === true ? top : bottom;
-
-        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-        };
-        
-        $(window).scroll(function(event) {
-            $(".form-box").each(function(i, el) {
-            var el = $(el);
-            if (el.visible(true)) {
-                el.addClass("round4"); 
-            } 
-            });
-        });
-    });
-})(jQuery); </script>
-        
-
-
+   
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 </body>	
 </html>
