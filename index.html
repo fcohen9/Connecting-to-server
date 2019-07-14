@@ -17,7 +17,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+<link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="script.js"></script>
@@ -219,7 +219,7 @@
                             <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
                             <p class="letter__text">
 
-                                    <textarea id="letter output" readonly> GENERAL PUBLIC: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
+                                    <textarea id="letter" readonly> GENERAL PUBLIC: We, the undersigned, call upon New York’s education officials to ensure that all children residing in New York — whether in public or non-public schools — be provided with an education that meets New York State’s requirements. 
                                     
 The problem is particularly acute as regards many of New York’s Hasidic and ultra-Orthodox yeshivas. New York State Education Law (Article 65, Section 3204) mandates that all children attending non-public schools receive an education that is “substantially equivalent” to that of public schools. More specifically, the law requires all non-public schools to provide instruction in English, mathematics, science and social studies among other subjects.
                                         
@@ -277,12 +277,23 @@ Our signatures on this petition evince our resolve to stand up for the rights of
             
                                     
             
-            <div id="writeyourown" class="tab_content">
-                    <div class="form-grp__edit"><textarea class="writeyourown"></textarea></div></div>
+            
             
                                     
                        </div></div>
+                       <div id="writeyourown" class="tab_content form-grp__edit">
+                            <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
                             
+                            <p class="letter__text">
+                            <div class="form-grp__edit"><textarea id="letter" class="writeyourown" placeholder="Type something here"></textarea></div></div>
+
+                            <div id="yeshiva-parents" class="tab_content">
+                                    <div class="form-grp__edit">
+                                            <input type="button" value="Edit This Letter" class="makeEditable btn__letter">
+                                            
+                                            <p class="letter__text">
+            
+                                            <textarea id="letter" readonly>
                             
                         
                     </section>                            
@@ -297,7 +308,7 @@ Our signatures on this petition evince our resolve to stand up for the rights of
         <div class="socialmedia">
             <a href="https://twitter.com/yaffedorg?lang=en"><img class="socialmedia" src="/assets/social/twitter.svg"></a>
             <a href="https://www.youtube.com/channel/UCRTgUveROuDiZ9BX4OrJcLQ"><img class="socialmedia" src="/assets/social/youtube.svg"></a>
-            <a href="https://www.facebook.com/yaffed.org/"><img class="socialmedia" src="/assets/social/facebook.svg"></a>
+            <a href="https://www.facebook.com/yaffed.org/"><img class="socialmedia" src="/yaffed-se2/assets/social/facebook.svg"></a>
         </div>
             
         
