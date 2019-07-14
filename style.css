@@ -1244,18 +1244,26 @@ button.btn__changetemplate:hover {
   background-color: #cf4800;
 }
 
+button.btn__changetemplate:active {
+  cursor: pointer;
+  background-color: #cf4800;
+}
+
+button.btn__changetemplate:focus {
+  cursor: pointer;
+  background-color: #cf4800;
+}
+
 button.btn__changetemplate {
   background-color: #FF6700;
   padding: 13px 30px;
-  font-size: 1.25em;
+  font-size: 1.05em;
   text-transform: capitalize;
   text-decoration: none;
   color: white;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   border: none;
-  width: 11vw;
-  margin: 1vw;
   padding: 12px;
   margin: 0;
   margin-right: 1vw;
@@ -1381,8 +1389,6 @@ a.send {
 
 .tab_content {
   z-index: 3;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 input.letter {
@@ -1420,6 +1426,7 @@ textarea {
   resize: none;
   outline: none;
   border: none;
+  font-size: 100%;
 }
 
 textarea.writeyourown {
@@ -1429,7 +1436,11 @@ textarea.writeyourown {
 }
 
 textarea:focus {
-  outline: initial;
+  outline: blue;
+}
+
+textarea:hover {
+  outline: blue;
 }
 
 .form-grp__edit {
@@ -1458,5 +1469,17 @@ span.required {
   border: 1px grey solid;
   padding-left: 1vw;
   padding-top: 1vw;
+}
+
+button.send {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+p.edit-instructions {
+  margin-top: -7vw;
+  margin-left: 10vw;
+  color: grey;
 }
 /*# sourceMappingURL=style.css.map */
